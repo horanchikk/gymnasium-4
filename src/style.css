@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600&family=Montserrat:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+@keyframes showTop {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes showBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes showLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes showRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes hideTop {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes hideBottom {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes hideLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes hideRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+.showTop {
+    animation: showTop 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.showBottom {
+    animation: showBottom 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.showLeft {
+    animation: showLeft 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.showRight {
+    animation: showRight 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.hideTop {
+    animation: hideTop 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+.hideBottom {
+    animation: hideBottom 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+.hideLeft {
+    animation: hideLeft 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+.hideRight {
+    animation: hideRight 300ms ease-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
